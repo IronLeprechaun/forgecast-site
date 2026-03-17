@@ -193,41 +193,10 @@
 
     <p class="animate-fade-up delay-400 mt-5 text-sm text-ash/60">Free forever. No account required.</p>
 
-    <!-- Hero Visual Placeholder -->
+    <!-- Hero Visual -->
     <div class="mt-16 relative animate-fade-up delay-400">
       <div class="relative max-w-4xl mx-auto rounded-2xl border border-white/[0.06] bg-steel overflow-hidden shadow-2xl shadow-black/50">
-        <div class="aspect-[16/9] flex items-center justify-center">
-          <!-- Replace with actual screenshot or GIF -->
-          <div class="text-center px-8">
-            <div class="inline-flex items-center gap-3 bg-white/[0.04] rounded-xl px-6 py-4 mb-4">
-              <svg width="48" height="48" viewBox="0 0 100 100">
-                <defs>
-                  <linearGradient id="heroFireGrad" x1="0" y1="1" x2="0" y2="0">
-                    <stop offset="0%" stop-color="#f97316"/>
-                    <stop offset="40%" stop-color="#f97316"/>
-                    <stop offset="100%" stop-color="#fcd34d"/>
-                  </linearGradient>
-                  <filter id="heroFireBlur"><feGaussianBlur in="SourceGraphic" stdDeviation="1.5"/></filter>
-                </defs>
-                <rect width="100" height="100" rx="16" fill="#0f1419"/>
-                <g style="filter: drop-shadow(0 0 8px rgba(249,115,22,0.6))">
-                  <text x="14" y="72" font-family="monospace" font-size="50" font-weight="bold" fill="#f97316">&gt;</text>
-                  <rect x="50" y="58" width="30" height="6" rx="2" fill="#f97316" class="animate-cursor"/>
-                  <g filter="url(#heroFireBlur)" transform="translate(0, -4) scale(0.75)" transform-origin="65 50">
-                    <path fill="url(#heroFireGrad)" opacity="0.8">
-                      <animate attributeName="d" dur="0.8s" repeatCount="indefinite" values="M50 56 Q48 40 52 28 Q56 18 60 24 Q64 30 62 38 Q68 26 72 32 Q76 40 74 48 Q78 44 80 50 Q82 56 76 58 Q68 60 64 58 Q58 60 50 56 Z;M50 56 Q46 42 50 30 Q54 16 58 22 Q62 28 60 36 Q66 24 70 30 Q74 38 72 46 Q76 42 78 48 Q80 56 74 58 Q66 62 62 58 Q56 62 50 56 Z;M50 56 Q48 40 52 28 Q56 18 60 24 Q64 30 62 38 Q68 26 72 32 Q76 40 74 48 Q78 44 80 50 Q82 56 76 58 Q68 60 64 58 Q58 60 50 56 Z"/>
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              <div class="text-left">
-                <div class="text-white font-semibold">Desktop + Mobile</div>
-                <div class="text-ash text-sm">Screenshot or demo GIF goes here</div>
-              </div>
-            </div>
-            <p class="text-ash/40 text-xs">Replace with: dual-device screenshot showing desktop terminals + mobile companion</p>
-          </div>
-        </div>
+        <img src="img/desktop-hero.png" alt="Forgecast desktop app with multiple terminals, background image, and dual-pane layout" class="w-full" loading="eager"/>
         <!-- Bottom fade -->
         <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none"></div>
       </div>
@@ -339,15 +308,15 @@
           </li>
         </ul>
       </div>
-      <div class="rounded-2xl border border-white/[0.06] bg-steel overflow-hidden aspect-[4/3] flex items-center justify-center">
-        <p class="text-ash/30 text-sm px-8 text-center">Desktop terminal manager screenshot</p>
+      <div class="rounded-2xl border border-white/[0.06] bg-steel overflow-hidden">
+        <img src="img/desktop-code-editing.png" alt="Forgecast desktop showing Claude editing code with diff highlighting" class="w-full" loading="lazy"/>
       </div>
     </div>
 
     <!-- Row 2: Mobile (reversed) -->
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center reveal">
-      <div class="order-2 lg:order-1 rounded-2xl border border-white/[0.06] bg-steel overflow-hidden aspect-[4/3] flex items-center justify-center">
-        <p class="text-ash/30 text-sm px-8 text-center">Mobile companion screenshot</p>
+      <div class="order-2 lg:order-1 rounded-2xl border border-white/[0.06] bg-steel overflow-hidden flex items-center justify-center p-8">
+        <img src="img/mobile-terminal-list.png" alt="Forgecast mobile companion showing terminal list with colors and git branches" class="max-h-[480px] rounded-xl shadow-lg" loading="lazy"/>
       </div>
       <div class="order-1 lg:order-2">
         <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4 tracking-tight">Your phone keeps you connected.</h3>
