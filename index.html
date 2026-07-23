@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forgecast — Your terminals, everywhere.</title>
-  <meta name="description" content="Terminal manager with a mobile companion. Monitor your Claude sessions from your phone. Pair with a QR code. Free.">
+  <title>Forgecast — Terminal Manager for Claude Code, on Your Phone</title>
+  <meta name="description" content="Terminal manager with a mobile companion. Monitor your Claude Code sessions from your phone. Pair with a QR code. Free.">
   <link rel="canonical" href="https://forgecast.dev/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#0a0a0a">
 
   <!-- OG -->
   <meta property="og:title" content="Forgecast — Your terminals, everywhere.">
-  <meta property="og:description" content="Terminal manager with a mobile companion. Monitor Claude sessions from your phone.">
+  <meta property="og:description" content="Terminal manager with a mobile companion. Monitor Claude Code sessions from your phone.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forgecast.dev/">
   <meta property="og:image" content="https://forgecast.dev/img/forgecast-banner-1280x640.png">
@@ -22,7 +22,7 @@
   <meta property="og:image:alt" content="Forgecast — terminal manager with a mobile companion app, shown on desktop and phone">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Forgecast — Your terminals, everywhere.">
-  <meta name="twitter:description" content="Terminal manager with a mobile companion. Monitor Claude sessions from your phone.">
+  <meta name="twitter:description" content="Terminal manager with a mobile companion. Monitor Claude Code sessions from your phone.">
   <meta name="twitter:image" content="https://forgecast.dev/img/forgecast-banner-1280x640.png">
   <meta name="twitter:site" content="@forgecast">
   <meta name="twitter:creator" content="@forgecast">
@@ -141,7 +141,7 @@
         "@type": "SoftwareApplication",
         "@id": "https://forgecast.dev/#software",
         "name": "Forgecast",
-        "description": "Terminal manager with a mobile companion. Monitor your Claude sessions from your phone. Pair with a QR code. Free.",
+        "description": "Terminal manager with a mobile companion. Monitor your Claude Code sessions from your phone. Pair with a QR code. Free.",
         "url": "https://forgecast.dev/",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Windows 10, Windows 11, Android",
@@ -150,6 +150,42 @@
         "screenshot": ["https://forgecast.dev/img/desktop-hero.png", "https://forgecast.dev/img/mobile-terminal-list.png"],
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
         "publisher": { "@id": "https://forgecast.dev/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://forgecast.dev/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Forgecast free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every feature, every terminal, and unlimited relay access are free, with no account and no trial. Supporting development is entirely optional and nothing is locked behind it." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Forgecast?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Forgecast is a desktop terminal manager that owns all your terminals and doubles as the server for its Android companion app, so you can watch your sessions from anywhere." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Forgecast work with Claude Code?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, that is the point. Forgecast tracks your Claude Code session state and sends your phone a notification the moment a session finishes or needs input, so you can step away from your desk." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does my phone connect to my desktop?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pair once by scanning a QR code. After that your phone reaches your desktop directly on the same network, or from anywhere through the Forgecast relay." }
+          },
+          {
+            "@type": "Question",
+            "name": "What platforms does it support?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The desktop app runs on Windows 10 and 11. The companion app is an Android APK. There is no iOS build right now." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an account?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. There is no sign-up and no login. Download it and go." }
+          }
+        ]
       }
     ]
   }
@@ -195,6 +231,7 @@
       <a href="#features" class="text-sm text-ash hover:text-white transition-colors">Features</a>
       <a href="#how-it-works" class="text-sm text-ash hover:text-white transition-colors">How It Works</a>
       <a href="#support" class="text-sm text-ash hover:text-white transition-colors">Support</a>
+      <a href="#faq" class="text-sm text-ash hover:text-white transition-colors">FAQ</a>
       <a href="#download" class="text-sm font-semibold bg-forge-orange hover:bg-forge-ember text-black px-5 py-2 rounded-lg transition-colors">Download</a>
     </div>
 
@@ -210,6 +247,7 @@
       <a href="#features" class="text-sm text-ash hover:text-white">Features</a>
       <a href="#how-it-works" class="text-sm text-ash hover:text-white">How It Works</a>
       <a href="#support" class="text-sm text-ash hover:text-white">Support</a>
+      <a href="#faq" class="text-sm text-ash hover:text-white">FAQ</a>
       <a href="#download" class="text-sm font-semibold bg-forge-orange text-black px-5 py-2.5 rounded-lg text-center">Download</a>
     </div>
   </div>
@@ -226,6 +264,7 @@
   <div class="max-w-4xl mx-auto px-6 text-center relative">
     <!-- Headline -->
     <h1 class="animate-fade-up delay-100 text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05]">
+      <span class="sr-only">Forgecast is a terminal manager for Claude Code with a mobile companion app. </span>
       Your terminals,<br>
       <span class="bg-gradient-to-r from-forge-orange via-forge-molten to-forge-orange bg-clip-text text-transparent">everywhere.</span>
     </h1>
@@ -233,7 +272,7 @@
     <!-- Subheadline -->
     <p class="animate-fade-up delay-200 mt-6 text-lg sm:text-xl text-ash max-w-xl mx-auto leading-relaxed">
       Manage your terminals on desktop. Monitor them from your phone.
-      Know when Claude finishes&nbsp;&mdash; without touching your keyboard.
+      Know when Claude Code finishes&nbsp;&mdash; without touching your keyboard.
     </p>
 
     <!-- CTAs -->
@@ -475,6 +514,69 @@
           </a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" aria-labelledby="faq-h" class="py-24 sm:py-32 border-t border-white/[0.04] relative overflow-hidden">
+  <!-- Ambient glow -->
+  <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-forge-orange/[0.03] rounded-full blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+  <div class="max-w-3xl mx-auto px-6 relative">
+    <div class="text-center mb-12 reveal">
+      <p class="text-forge-orange text-sm font-semibold uppercase tracking-widest mb-3">FAQ</p>
+      <h2 id="faq-h" class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Questions &amp; answers</h2>
+    </div>
+
+    <div class="space-y-3 reveal">
+      <details class="group rounded-xl border border-white/[0.06] bg-steel-light/20 px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer text-white font-semibold text-lg list-none">
+          Is Forgecast free?
+          <svg class="w-5 h-5 text-ash shrink-0 ml-4 transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </summary>
+        <p class="mt-4 text-ash leading-relaxed">Yes. Every feature, every terminal, and unlimited relay access are free, with no account and no trial. Supporting development is entirely optional and nothing is locked behind it.</p>
+      </details>
+
+      <details class="group rounded-xl border border-white/[0.06] bg-steel-light/20 px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer text-white font-semibold text-lg list-none">
+          What is Forgecast?
+          <svg class="w-5 h-5 text-ash shrink-0 ml-4 transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </summary>
+        <p class="mt-4 text-ash leading-relaxed">Forgecast is a desktop terminal manager that owns all your terminals and doubles as the server for its Android companion app, so you can watch your sessions from anywhere.</p>
+      </details>
+
+      <details class="group rounded-xl border border-white/[0.06] bg-steel-light/20 px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer text-white font-semibold text-lg list-none">
+          Does Forgecast work with Claude Code?
+          <svg class="w-5 h-5 text-ash shrink-0 ml-4 transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </summary>
+        <p class="mt-4 text-ash leading-relaxed">Yes, that is the point. Forgecast tracks your Claude Code session state and sends your phone a notification the moment a session finishes or needs input, so you can step away from your desk.</p>
+      </details>
+
+      <details class="group rounded-xl border border-white/[0.06] bg-steel-light/20 px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer text-white font-semibold text-lg list-none">
+          How does my phone connect to my desktop?
+          <svg class="w-5 h-5 text-ash shrink-0 ml-4 transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </summary>
+        <p class="mt-4 text-ash leading-relaxed">Pair once by scanning a QR code. After that your phone reaches your desktop directly on the same network, or from anywhere through the Forgecast relay.</p>
+      </details>
+
+      <details class="group rounded-xl border border-white/[0.06] bg-steel-light/20 px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer text-white font-semibold text-lg list-none">
+          What platforms does it support?
+          <svg class="w-5 h-5 text-ash shrink-0 ml-4 transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </summary>
+        <p class="mt-4 text-ash leading-relaxed">The desktop app runs on Windows 10 and 11. The companion app is an Android APK. There is no iOS build right now.</p>
+      </details>
+
+      <details class="group rounded-xl border border-white/[0.06] bg-steel-light/20 px-6 py-5 [&amp;_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer text-white font-semibold text-lg list-none">
+          Do I need an account?
+          <svg class="w-5 h-5 text-ash shrink-0 ml-4 transition-transform group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </summary>
+        <p class="mt-4 text-ash leading-relaxed">No. There is no sign-up and no login. Download it and go.</p>
+      </details>
     </div>
   </div>
 </section>
